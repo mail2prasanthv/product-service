@@ -1,0 +1,39 @@
+package com.myproject.productservice.model;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Data;
+
+@Data
+public class Coupon {
+
+	private String code;
+	private BigDecimal discount;
+	private String expDate;
+	
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public BigDecimal getDiscount() {
+		return discount;
+	}
+	public void setDiscount(BigDecimal discount) {
+		this.discount = discount;
+	}
+	public String getExpDate() {
+		return expDate;
+	}
+	public void setExpDate(String expDate) {
+		this.expDate = expDate;
+	}
+	
+	
+}
